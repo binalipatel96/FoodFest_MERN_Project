@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 //mongoDB connection URI
-// const mongoURI = "mongodb+srv://foodfest:foodfest123@cluster0.ryjh5ks.mongodb.net/foodfest?retryWrites=true&w=majority";
-const mongoURI = "mongodb://foodfest:foodfest123@ac-t0zxk7p-shard-00-00.ryjh5ks.mongodb.net:27017,ac-t0zxk7p-shard-00-01.ryjh5ks.mongodb.net:27017,ac-t0zxk7p-shard-00-02.ryjh5ks.mongodb.net:27017/foodfest?ssl=true&replicaSet=atlas-8o1dop-shard-0&authSource=admin&retryWrites=true&w=majority";
+
+const mongoURI = "put mongodb connection URL here";
 // function to check mongoose is connected to mongoDB
 const mongoDB = async() => {
     await mongoose.connect(mongoURI, { useNewUrlParser : true }, async(err, result)=>{
